@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Q2587 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         int hap = 0;
         int[] input = new int[5];
 
