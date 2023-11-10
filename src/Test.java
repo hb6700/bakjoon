@@ -4,6 +4,10 @@ public class Test {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int stdNum = scan.nextInt();
+        if(3>stdNum || stdNum>1000)
+        {
+            return;
+        }
         int aScore = 0, bScore = 0, cScore = 0;
         int a3Count = 0, b3Count = 0, c3Count = 0;
         int a2Count = 0, b2Count = 0, c2Count = 0;
