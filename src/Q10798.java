@@ -5,20 +5,23 @@ public class Q10798 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        //총 다섯줄의 입력이 주어진다. 각 줄에는 최소 1개, 최대 15개의 글자들이 빈칸 없이 연속으로 주어진다.
+        //총 다섯 줄의 입력, 최대 15개의 글자
         char[][] text = new char[5][15];
 
-        String input = "";
-        for (int i=0 ; i<text.length ; i++){
-            input = scan.nextLine();
-            for(int j = 0; j < input.length(); j++){
+        //배열에 값 입력
+        for (int i=0 ; i<5 ; i++){
+            String input = scan.nextLine();
+            for(int j=0; j<input.length() ; j++){
                 text[i][j] = input.charAt(j);
             }
         }
 
-        for(int j=0; j < input.length(); j++){
-            for (int i=0; i < text.length; i++){
-                System.out.print(text[i][j]);
+        //기존 배열 세로로 변경
+        for(int i=0 ; i<15 ; i++){
+            for(int j=0 ; j<5 ; j++){
+                if(text[j][i] != '\0'){
+                    System.out.print(text[j][i]);
+                }
             }
         }
     }
