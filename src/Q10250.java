@@ -1,45 +1,24 @@
-package com.baekjoon.numbase;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Q10250 {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int T = scan.nextInt();         //방 개수
+        int[] num = new int[T];
 
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        for(int i=0 ; i<T ; i++){
+            int H = scan.nextInt();     //층 수
+            int W = scan.nextInt();     //각 층의 호 수
+            int N = scan.nextInt();     //손님 순서
 
-        int a = Integer.parseInt(br.readLine());
-
-        for (int i = 0; i < a; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-
-            String e = "";
-
-            int b = Integer.parseInt(st.nextToken());       //높이
-            int c = Integer.parseInt(st.nextToken());       //한층의 방 개수
-            int d = Integer.parseInt(st.nextToken());       //손님수(?
-
-
-            if (d % b == 0) {
-                e = e + b;
-            } else {
-                e = e + (d % b);
+            if(N % H == 0){
+                num[i] = ((H * 100) + (N / H));
+            }else{
+                num[i] = (((N % H) * 100) + (N / H) + 1);
             }
-            double f =  Math.ceil((double)d / (double)b);
-            if (f < 10)
-                e = e + "0";
-
-            bw.write(e + (int)f + "\n");
-
         }
-        bw.flush();
-        bw.close();
-        br.close();
+        for(int i=0 ; i<T ; i++){
+            System.out.println(num[i]);
+        }
     }
-
-
 }
