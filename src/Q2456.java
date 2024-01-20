@@ -21,6 +21,7 @@ public class Q2456 {
             if(sum > max){
                 max = sum;
                 num = i;
+                check = 0;
             } else if (sum == max) {
                 if(arr[num][3] < arr[i][3]){
                     num = i;
