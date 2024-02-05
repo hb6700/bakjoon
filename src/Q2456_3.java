@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //백준 2456번
-public class W4Q2456 {
+public class Q2456_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int stdNum = scan.nextInt();

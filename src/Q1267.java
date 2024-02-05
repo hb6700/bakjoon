@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //백준 1267번(4주차)
-public class W4Q1267 {
+public class Q1267 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //통화의 개수

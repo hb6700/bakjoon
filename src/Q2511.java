@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //백준 2511번(4주차)
-public class W4Q2511 {
+public class Q2511 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

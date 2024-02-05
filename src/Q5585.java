@@ -15,8 +15,9 @@ public class Q5585 {
         //동전 개수
         int count = 0;
 
-        for(int i=0; i<6 ; i++){
-            if(money/change[i] > 0){        //돌려받을 돈이 있을때
+        for(int i=0; i <6 ; i++){
+            //돌려받을 돈이 있을때
+            if(money/change[i] > 0){
                 count += money/change[i];
                 money = money%change[i];
             }

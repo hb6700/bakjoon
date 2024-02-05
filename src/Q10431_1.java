@@ -1,8 +1,6 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class W5Q10431 {
+public class Q10431_1 {
     public static void main(String[] args) {
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
