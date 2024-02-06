@@ -89,7 +89,7 @@ public class Q2456_3 {
             }
         }
 
-        else{              //a == b
+        else{                                   //a == b
             if(aScore < cScore){
                 //c > a = b
                 System.out.print("3 " + cScore);
